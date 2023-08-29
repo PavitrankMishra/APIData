@@ -4,22 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-    <style>
-      #issMap {
-        height: 180px;
-      }
-    </style>
     <title>Api Data</title>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script> -->
   </head>
@@ -28,14 +12,12 @@
     <div>
       <canvas id="chart" width="800" height="400"></canvas>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <div class="location">
       <h1>Where is the ISS?</h1>
       <p>Latitude: <span id="lat"></span><br /></p>
       <p>Longitude: <span id="lon"></span><br /></p>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <div id="issMap"></div>
   </body>
   <script src="index.js"></script>
 </html>
